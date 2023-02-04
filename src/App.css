@@ -1,6 +1,30 @@
+
+
+:root{
+--backgroundColor:#262a41;
+}
+
 .header{
+   
     height: 100vh;
     color: #ffffff;
-    background-color:  #262a41;
-    padding: 100px 50px;
+    background-color: var(--backgroundColor) ;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+.displaySection{
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.users_section{
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: space-between;
+   
 }
