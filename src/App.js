@@ -1,4 +1,5 @@
 import React from "react";
+import {useEffect} from "react"
 import "./App.css";
 import "./components/FontAwesomeIcon";
 import Header from "./components/Header";
@@ -6,8 +7,9 @@ import DisplayUsers from "./components/DisplayUsers";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Delete from "./components/Header";
 function App() {
+
   return (
-    <div className="row" style={{ width: "100%",fontSize:"16px", boxSizing:"border-box" , border: "3px solid red" }}>
+    <div className="row" style={{fontSize:"16px", boxSizing:"border-box",backgroundColor:"#262a41",width:"100%"  }}>
       {/* <FontAwesomeIcon icon="user" />
       <FontAwesomeIcon icon="lock" /> */}
 
