@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 const InputField = () => {
@@ -5,7 +6,7 @@ const InputField = () => {
     <div>
 
 <div className="input">
-        <label>tt</label>
+        <label><FontAwesomeIcon icon = "magnifying-glass"/></label>
         <input id="input_user" placeholder="Find a user" />
       </div>
     </div>

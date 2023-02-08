@@ -8,7 +8,7 @@ const DisplayUsers = () => {
     <h3>All Users</h3>
     <p>Filter by</p>
     <InputField />
-    <ListUsers />
+    <ListUsers  />
     </div>
   );
 };
