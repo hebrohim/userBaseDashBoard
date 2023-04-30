@@ -3,57 +3,52 @@
 }
 
 .header {
-
   height: 100vh;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header_content{
-  /* margin:200px 0; */
+.header_content {
+  margin-top: 50%;
+  width: 70vw;
+  height: 90vh;
   box-sizing: border-box;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-   border: 1px solid yellow;
-    width: 75% ;  
 }
-.text_section{
+.text_section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.users_section {
-  /* border: 3px solid green; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
-.users_btn{
-  width:186px;
-  height:84px;
-  border-radius:20px;
-}
-
 
 .displaySection {
- width: 300px;
- display: flex;
- flex-direction: column;
- /* justify-content: center; */
- align-items: center ;
+
+ padding: 50px 25px;
+   display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center;  */
   background-color: #f7f7ff;
   border-radius: 20px;
-  
 }
 
+.userBtn_container {
+  display: flex;
 
+  flex-direction: column;
+}
+
+.users_btn {
+  width: 12rem;
+  height: 5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
 
 #user_img {
   width: 100px;
@@ -76,24 +71,53 @@
   border-radius: 20px !important;
 }
 
+/* input field styling */
+
+.input{
+  width: 100%;
+padding: 10px;
+ background-color: rgb(110, 110, 110);
+ color: rgb(40, 40, 40);
+ border-radius: 10px;
+
+}
+
+#input_user{
+  color: rgb(40, 40, 40);
+  background-color:rgb(110, 110, 110);
+  border: none;
+  border-radius: 10px;
+
+}
+#input_user:focus{
+ outline: none;
+}
 
 @media screen and (min-width: 400px) {
-  .header_content{
-    border:3px solid red;
+  .header_content {
+    margin-top: 10%;
+    height: 70vh;
+    align-items: flex-start;
+    padding-left: 10%;
   }
-  
+}
 
-  .users_section {
-    /* border: 3px solid green; */
+@media screen and (min-width: 600px) {
+  .users_btn {
+    width: 7rem;
+    height: 5rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+  }
+
+  .userBtn_container {
+   
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    box-sizing: border-box;
   }
 
-.users_btn{
-  width: 50px;
+  .displaySection{
+
+  }
 }
-}
+

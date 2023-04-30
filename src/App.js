@@ -9,7 +9,7 @@ import Delete from "./components/Header";
 function App() {
 
   return (
-    <div className="row" style={{fontSize:"16px", boxSizing:"border-box",backgroundColor:"#262a41",width:"100%" }}>
+    <div className="row" style={{fontSize:"16px", boxSizing:"border-box",backgroundColor:"#262a41",width:"100%", }}>
       {/* <FontAwesomeIcon icon="user" />
       <FontAwesomeIcon icon="lock" /> */}
 

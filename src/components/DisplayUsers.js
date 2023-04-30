@@ -4,9 +4,9 @@ import ListUsers from "./ListUsers";
 
 const DisplayUsers = () => {
   return (
-    <div className="col-md-6 displaySection" style={{}}>
-    <h3>All Users</h3>
-    <p>Filter by</p>
+    <div className="col-lg-5 displaySection mt-5" >
+    <h3 style={{textAlign:"center"}}>User Lists</h3>
+    <p style={{textAlign:"center"}}>Filter by</p>
     <InputField />
     <ListUsers  />
     </div>

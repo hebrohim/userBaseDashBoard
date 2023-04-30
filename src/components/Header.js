@@ -5,11 +5,11 @@ import InputField from "./InputField";
 
 const Header = () => {
   return (
-    <div className="col-md-6 header">
+    <div className="col-lg-7 header">
       <div className="header_content">
         <div className="text_section">
           <p id="hello_text" style={{ fontSize: " 30px" }}>
-            <span style={{ fontWeight: " lighter" }}> Hello,</span>
+            <span style={{ fontWeight: " lighter" }}> Hello, </span>
             <span id="emerald_text" style={{ fontWeight: "bolder" }}>
               Emerald
             </span>
@@ -22,24 +22,30 @@ const Header = () => {
 
         <InputField />
 
-        <div className="users_section ">
-          <p>Show Users</p>
-          <UserButton
-            type_of_user="All users"
-            icon="users"
-            color="rgb(249, 53, 169)"
-          />
-          <UserButton
-            type_of_user="Male users"
-            icon="person"
-            color="rgb(48, 187, 181)"
-          />
-          <UserButton
-            type_of_user="Female users"
-            icon="person"
-            color="rgb(121, 70, 193)"
-          />
-        </div>
+        <p>Show Users</p>
+        <section className="userBtn_container">
+        
+            <UserButton
+              type_of_user="All users"
+              icon="users"
+              color="rgb(249, 53, 169)"
+            />
+          
+          
+            <UserButton 
+              type_of_user="Male users"
+              icon="person"
+              color="rgb(48, 187, 181)"
+            />
+        
+        
+            <UserButton
+              type_of_user="Female users"
+              icon="person"
+              color="rgb(121, 70, 193)"
+            />
+         
+        </section>
       </div>
     </div>
   );
