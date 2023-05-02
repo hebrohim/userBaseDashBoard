@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Pagination from "./Pagination";
+import "../App.css";
 
 const baseUrl = "https://randomuser.me/api/?results=100";
 
@@ -34,52 +35,82 @@ const ListUsers = () => {
     <div>
       {currentUsers.map((user) => {
         return (
-          <div className="card" key={user.cell}>
-            <img id="user_img" src={`${user.picture.large}`} />
+          <section className="card" key={user.cell}>
+            <div className="cardHead">
+              <img id="user_img" src={`${user.picture.large}`} />
+              <div className="userName">
+                <h5 style={{ fontWeight: "bold" }}>
+                  {user.name.first} {user.name.last}
+                </h5>
+               
+                <i style={{color:"rgba(47, 47, 47, 0.486)"}}>
+                  {user.location.postcode},{user.location.city},
+                  {user.location.state},{user.location.country}
+                </i>
 
-            <h5 style={{ fontWeight: "bold" }}>
-              {user.name.first} {user.name.last}
-            </h5>
-            <p>
-              <i>
-                {user.location.postcode},{user.location.city},
-                {user.location.state},{user.location.country}
-              </i>
-            </p>
+                <div className="userContact">
             <p>
               <span>
                 <FontAwesomeIcon icon="envelope" />
-              </span>
-              {user.email}
+              </span> 
+               {` ${user.email}`}
             </p>
 
             <p>
               <span>
-                <FontAwesomeIcon icon="phone-volume" />
+                <FontAwesomeIcon icon="phone-volume" />       
+                
               </span>
-              {user.cell}
+              {` ${user.cell}`}
+
             </p>
 
-            <button>
+            <button className="popupBtn">
               <FontAwesomeIcon icon="arrow-right" />
             </button>
-          </div>
+            </div>
+              </div>
+            </div>
+
+            
+
+          </section>
         );
       })}
 
       {/* Pagination component */}
 
       {/* <Pagination users = {users.length} userPerPage= {userPerPage} changePage = {changePage}/> */}
-      <section style={{width:"90%",display:"flex",justifyContent:"flex-end"}}>
-
-     
-
-      <button onClick={() => setcurrentPage(currentPage - 1)} style={{backgroundColor:"#b7b7b7  " ,marginLeft:".4rem",color:"white",borderRadius:".3rem"}}>
-        <FontAwesomeIcon icon="angle-left" />
-      </button>
-      <button onClick={() => setcurrentPage(currentPage + 1)} style={{backgroundColor:"#3b3838" ,marginLeft:".4rem",color:"white",borderRadius:".3rem"}}>
-        <FontAwesomeIcon icon="angle-right" />
-      </button>
+      <section
+        style={{ width: "90%", display: "flex", justifyContent: "flex-end" }}
+      >
+        
+        <button
+          onClick={() => setcurrentPage(currentPage - 1)}
+          style={{
+            padding:"0.4rem 1rem",
+            border:"none",
+            backgroundColor: "#b7b7b7  ",
+            marginLeft: ".4rem",
+            color: "white",
+            borderRadius: ".3rem",
+          }}
+        >
+          <FontAwesomeIcon icon="angle-left" />
+        </button>
+        <button
+          onClick={() => setcurrentPage(currentPage + 1)}
+          style={{
+            padding:"0.4rem 1rem",
+            border:"none",
+            backgroundColor: "#3b3838",
+            marginLeft: ".4rem",
+            color: "white",
+            borderRadius: ".3rem",
+          }}
+        >
+          <FontAwesomeIcon icon="angle-right" />
+        </button>
       </section>
     </div>
   );

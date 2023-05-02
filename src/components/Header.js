@@ -5,7 +5,7 @@ import InputField from "./InputField";
 
 const Header = () => {
   return (
-    <div className="col-lg-7 header">
+    <div className="col-lg-6 header">
       <div className="header_content">
         <div className="text_section">
           <p id="hello_text" style={{ fontSize: " 30px" }}>
