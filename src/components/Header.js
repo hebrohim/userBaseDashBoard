@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         <p id="showText">Show Users</p>
 
-        <section className="userBtn_container">
+        <section className="userBtn_container" onClick={()=>{console.log("container clicked")}}>
           <UserButton
             type_of_user="All users"
             icon="users"
