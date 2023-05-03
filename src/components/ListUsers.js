@@ -42,38 +42,33 @@ const ListUsers = () => {
                 <h5 style={{ fontWeight: "bold" }}>
                   {user.name.first} {user.name.last}
                 </h5>
-               
-                <i style={{color:"rgba(47, 47, 47, 0.486)"}}>
+
+                <i style={{ color: "rgba(47, 47, 47, 0.486)" }}>
                   {user.location.postcode},{user.location.city},
                   {user.location.state},{user.location.country}
                 </i>
 
                 <div className="userContact">
-            <p>
-              <span>
-                <FontAwesomeIcon icon="envelope" />
-              </span> 
-               {` ${user.email}`}
-            </p>
+                  <p>
+                    <span>
+                      <FontAwesomeIcon icon="envelope" />
+                    </span>
+                    {` ${user.email}`}
+                  </p>
 
-            <p>
-              <span>
-                <FontAwesomeIcon icon="phone-volume" />       
-                
-              </span>
-              {` ${user.cell}`}
+                  <p>
+                    <span>
+                      <FontAwesomeIcon icon="phone-volume" />
+                    </span>
+                    {` ${user.cell}`}
+                  </p>
 
-            </p>
-
-            <button className="popupBtn">
-              <FontAwesomeIcon icon="arrow-right" />
-            </button>
-            </div>
+                  <button className="popupBtn">
+                    <FontAwesomeIcon icon="arrow-right" />
+                  </button>
+                </div>
               </div>
             </div>
-
-            
-
           </section>
         );
       })}
@@ -84,12 +79,11 @@ const ListUsers = () => {
       <section
         style={{ width: "90%", display: "flex", justifyContent: "flex-end" }}
       >
-        
         <button
           onClick={() => setcurrentPage(currentPage - 1)}
           style={{
-            padding:"0.4rem 1rem",
-            border:"none",
+            padding: "0.4rem 1rem",
+            border: "none",
             backgroundColor: "#b7b7b7  ",
             marginLeft: ".4rem",
             color: "white",
@@ -101,8 +95,8 @@ const ListUsers = () => {
         <button
           onClick={() => setcurrentPage(currentPage + 1)}
           style={{
-            padding:"0.4rem 1rem",
-            border:"none",
+            padding: "0.4rem 1rem",
+            border: "none",
             backgroundColor: "#3b3838",
             marginLeft: ".4rem",
             color: "white",

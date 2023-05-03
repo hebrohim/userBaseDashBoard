@@ -2,24 +2,25 @@
   --backgroundColor: #262a41;
 }
 
+
 .header {
   height: 100vh;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-
 }
 .header_content {
   margin-top: 50%;
-  width: 70vw;
+  padding: 0 50px;
+  width: 100vw;
   height: 90vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center !important; */
+  
 }
 .text_section {
   display: flex;
@@ -38,9 +39,18 @@
 }
 
 .userBtn_container {
+  margin-bottom: 15rem;
+  width: 105%;
   display: flex;
-
+justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+}
+
+#showText{
+width: 100%;
+text-align: center;
+margin-top: 1rem;
 }
 
 .users_btn {
@@ -59,8 +69,10 @@
 }
 
 .card {
-  width: 70%;
+  width: 100%;
+  word-break: break-all;
   margin: 20px auto;
+  /* overflow: hidden; */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.598);
   padding: 20px 0;
   align-items: center;
@@ -68,22 +80,19 @@
   border-radius: 20px !important;
 }
 
-.userName{
-font-size: .8rem;
-
+.userName {
+  font-size: 0.8rem;
 }
 
- .userContact{
-color: rgba(47, 47, 47, 0.486);
-font-size: .8rem;
-
- }
-
+.userContact {
+  color: rgba(47, 47, 47, 0.486);
+  font-size: 0.8rem;
+}
 
 /* input field styling */
 
 .input {
-  width: 100%;
+  /* width: 100%; */
   padding: 10px;
   background-color: rgb(138, 137, 137);
   color: rgb(46, 46, 46);
@@ -92,7 +101,7 @@ font-size: .8rem;
 }
 
 #input_user {
-  width:90%;
+  width: 90%;
   color: rgb(46, 46, 46);
   background-color: rgb(138, 137, 137);
 
@@ -103,17 +112,14 @@ font-size: .8rem;
   outline: none;
 }
 
-.popupBtn{
-
-  background-color:  rgb(117, 214, 209);
-  padding:.1rem .9rem;
-  border-radius: .6rem;
+.popupBtn {
+  background-color: rgb(117, 214, 209);
+  padding: 0.1rem 0.9rem;
+  border-radius: 0.6rem;
   border: none;
   color: white;
   font-size: 1.3rem;
 }
-
-
 
 @media screen and (min-width: 400px) {
   .header_content {
@@ -122,7 +128,6 @@ font-size: .8rem;
     align-items: flex-start;
     padding-left: 10%;
   }
-
 }
 
 @media screen and (min-width: 600px) {
@@ -132,6 +137,10 @@ font-size: .8rem;
     border-radius: 1rem;
     margin-right: 2rem;
   }
+  #showText{
+    width: 100%;
+    text-align: left;
+    }
 
   .userBtn_container {
     display: flex;
@@ -139,67 +148,52 @@ font-size: .8rem;
   }
 
   .card {
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: 100%;
     align-items: flex-start;
     padding: 20px;
   }
 
-  .cardHead{
-   width: 100%;
-  
-    display: flex;
+  .cardHead {
+    width: 100%;
 
+    display: flex;
   }
 
-  .userName{
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- margin-left: 2rem;
+  .userName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
 
     /* background-color: red; */
-
   }
 
-  .userContact{
-    font-size: .8rem;
+  .userContact {
+    font-size: 0.8rem;
     display: flex;
     gap: 1.5rem;
     margin-top: 2rem;
     justify-content: space-between;
-
   }
-
-  
 }
 
 @media screen and (min-width: 745px) {
-
-  .card{
- 
- width: 80%;
-   }
-  
+  .card {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 990px) {
+  .card {
+    width: 100%;
+  }
 
-  .card{
- 
- width: 100%;
-   }
-   
-  .userContact{
-    font-size: .9rem;
+  .userContact {
+    font-size: 0.9rem;
     display: flex;
     gap: 0.8rem;
     margin-top: 2rem;
     justify-content: space-between;
-
   }
-
- 
-
-
 }
